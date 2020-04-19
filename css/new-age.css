@@ -460,3 +460,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   font-size: 11px;
   padding: 15px 45px;
 }
+
+.wz-nav-logo {
+  background-image: url(https://web-assets.waze.com/website/assets/packs/media/quick-win/nav/logo-7e4a082d515b5b9f501aa43d7dee5c9d.svg);
+}
