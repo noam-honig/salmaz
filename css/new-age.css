@@ -11,16 +11,16 @@ body {
 }
 
 body {
-  font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: 'Varela Round','Muli', 'Helvetica', 'Arial', 'sans-serif';
 }
 
 a {
-  color: #fdcc52;
+  color: #2196f3;
   transition: all .35s;
 }
 
 a:hover, a:focus {
-  color: #fcbd20;
+  color: #0c7cd5;
 }
 
 hr {
@@ -40,7 +40,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: 'Varela Round','Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
 }
@@ -63,20 +63,20 @@ section h2 {
   border-color: rgba(34, 34, 34, 0.05);
   background-color: white;
   transition: all .35s;
-  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: 'Varela Round','Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
 }
 
 #mainNav .navbar-brand {
-  color: #fdcc52;
-  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  color: white;
+  font-family: 'Varela Round','Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
 }
 
 #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
-  color: #fcbd20;
+  color: #0c7cd5;
 }
 
 #mainNav .navbar-toggler {
@@ -93,7 +93,7 @@ section h2 {
 }
 
 #mainNav .navbar-nav > li > a.active {
-  color: #fdcc52 !important;
+  color: #2196f3 !important;
   background-color: transparent;
 }
 
@@ -108,7 +108,7 @@ section h2 {
 
 #mainNav .navbar-nav > li > a:hover,
 #mainNav .navbar-nav > li > a:focus:hover {
-  color: #fdcc52;
+  color: #2196f3;
 }
 
 @media (min-width: 992px) {
@@ -138,7 +138,7 @@ section h2 {
     color: #222222;
   }
   #mainNav.navbar-shrink .navbar-brand:hover, #mainNav.navbar-shrink .navbar-brand:focus {
-    color: #fdcc52;
+    color: #2196f3;
   }
   #mainNav.navbar-shrink .navbar-nav > li > a,
   #mainNav.navbar-shrink .navbar-nav > li > a:focus {
@@ -146,7 +146,7 @@ section h2 {
   }
   #mainNav.navbar-shrink .navbar-nav > li > a:hover,
   #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
-    color: #fdcc52;
+    color: #2196f3;
   }
 }
 
@@ -278,6 +278,58 @@ section.features .feature-item i {
   display: block;
   margin-bottom: 15px;
   background: linear-gradient(to left, #7b4397, #dc2430);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+section.overview {
+  text-align: right;
+}
+
+section.overview .section-heading {
+  margin-bottom: 100px;
+}
+
+section.overview .section-heading h2 {
+  margin-top: 0;
+}
+
+section.overview .section-heading p {
+  margin-bottom: 0;
+}
+
+section.overview .device-container,
+section.overview .feature-item {
+  max-width: 325px;
+  margin: 0 auto;
+}
+
+section.overview .device-container {
+  margin-bottom: 100px;
+}
+
+@media (min-width: 992px) {
+  section.overview .device-container {
+    margin-bottom: 0;
+  }
+}
+
+section.overview .feature-item {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+section.overview .feature-item h3 {
+  font-size: 30px;
+}
+
+section.overview .feature-item i {
+  font-size: 80px;
+  display: block;
+  margin-bottom: 15px;
+  background: -webkit-linear-gradient(to left, #7b4397, #dc2430);
+  background: white;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -424,12 +476,16 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 }
 
 .bg-primary {
-  background: #fdcc52;
-  background: linear-gradient(#fdcc52, #fdc539);
+  background: #2196f3;
+  background: linear-gradient(#2196f3, #0d8aee);
+}
+
+.bg-gray {
+  background: #f6f6f6;
 }
 
 .text-primary {
-  color: #fdcc52;
+  color: #2196f3;
 }
 
 .no-gutter > [class*='col-'] {
@@ -445,8 +501,8 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 .btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
   color: white;
-  border-color: #fdcc52;
-  background-color: #fdcc52;
+  border-color: #2196f3;
+  background-color: #2196f3;
 }
 
 .btn {
@@ -461,6 +517,19 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   padding: 15px 45px;
 }
 
-.wz-nav-logo {
-  background-image: url(https://web-assets.waze.com/website/assets/packs/media/quick-win/nav/logo-7e4a082d515b5b9f501aa43d7dee5c9d.svg);
+.logos {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.logos div > img {
+  width: 80px;
+  height: 80px;
+}
+
+.logos div {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  width: 100px;
 }

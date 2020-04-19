@@ -4,6 +4,11 @@
     background: -webkit-linear-gradient($theme-primary, darken($theme-primary, 5%));
     background: linear-gradient($theme-primary, darken($theme-primary, 5%));
 }
+.bg-gray {
+    background: $gray-lighter;
+    //background: -webkit-linear-gradient($gray-lighter, darken($gray-lighter, 5%));
+    //background: linear-gradient($gray-lighter, darken($gray-lighter, 5%));
+}
 
 .text-primary {
     color: $theme-primary;
