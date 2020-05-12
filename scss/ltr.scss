@@ -1,0 +1,18 @@
+section.overview{
+    text-align: left;
+}
+header.masthead {
+    
+    @media (min-width: 992px) {
+      
+        .header-content {
+         
+
+            text-align: left;
+            h1 {
+                font-size: 50px;
+            }
+        }
+        
+    }
+}
